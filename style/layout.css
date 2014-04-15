@@ -1,0 +1,82 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.ormee > .wrap {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1024px;
+	min-width: 480px;
+	min-height: 100%;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+}
+
+
+/* BUTONS */
+.ormee > .btn {
+	position: fixed;
+	left: 10px;
+	width: 42px;
+	height: 42px;
+	background: url('images/icons.png') 0 0 no-repeat;
+	border-radius: 21px;
+	cursor: pointer;
+	z-index: 99;
+	text-indent: 45px;
+}
+
+.ormee > .btn.switch_mode {
+	top: 10px;
+	background-color: rgb(243, 156, 18);
+	background-position: -84px 0;
+	z-index: 100;
+}
+.ormee > .btn.switch_mode:hover {
+	background-color: rgb(241, 196, 15);
+}
+.ormee > .btn.control_page {
+	top: 62px;
+	background-color: rgb(41, 128, 185);
+	background-position: -42px 0;
+}
+.ormee > .btn.control_page:hover {
+	background-color: rgb(52, 152, 219);
+}
+
+.ormee > .btn.add_element {
+	top: 114px;
+	background-color: rgb(22, 160, 133);
+	background-position: 0 0;
+}
+.ormee > .btn.add_element:hover {
+	background-color: rgb(26, 188, 156);
+}
+
+
+
+
+
+
+
+.ormee > .wrap .title_wrap {
+	background: #F4F4F4;
+	border-bottom: 1px dashed #CECECE;
+}
+
+.ormee > .wrap .title_wrap textarea.h1 {
+	margin: 20px 0;
+	padding: 10px 0;
+	width: 100%;
+	font-size: 48px;
+	text-align: center;
+	color: #848484;
+	font-family: 'Philosopher', sans-serif;
+	line-height: 48px;
+	background: none;
+	border: none;
+	outline: none;
+	resize: none;
+}
