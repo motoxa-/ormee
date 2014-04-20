@@ -4,48 +4,25 @@
 		<link href='http://fonts.googleapis.com/css?family=Philosopher:700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="style/layout.css">
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js/ormee.js"></script>
 		<script>
-		$(document).ready(function(){
-			$(".ormee > .btn.switch_mode").toggle(function() {
-				$(".ormee > .btn.control_page").animate({top:10, opacity:0}, 200);
-				$(".ormee > .btn.add_element").animate({top:10, opacity:0}, 200);
-			}, function() {
-				$(".ormee > .btn.control_page").animate({top:62, opacity:1}, 200);
-				$(".ormee > .btn.add_element").animate({top:114, opacity:1}, 200);
+			$(document).ready(function(){
+				$("#editor").ormee();
 			});
-
-			$(".ormee > .btn.add_element").toggle(function() {
-				$(".ormee > .btn.control_page").animate({opacity:0.5}, 200);
-				$(".ormee > .btn.switch_mode").animate({opacity:0.5}, 200);
-				var elem = $(this);
-				$({deg: 0}).animate({deg: 45}, {
-					duration: 200,
-					step: function(now) {
-						elem.css({webkitTransform: 'rotate('+now+'deg)', transform: 'rotate('+now+'deg)'});
-					}
-				});
-			}, function() {
-				$(".ormee > .btn.control_page").animate({opacity:1}, 150);
-				$(".ormee > .btn.switch_mode").animate({opacity:1}, 150);
-				var elem = $(this);
-				$({deg: 45}).animate({deg: 0}, {
-					duration: 200,
-					step: function(now) {
-						elem.css({webkitTransform: 'rotate('+now+'deg)', transform: 'rotate('+now+'deg)'});
-					}
-				});
-			});
-		});
 		</script>
 	</head>
 	<body>
-		<div class="ormee">
+		<!--<div class="ormee">
 			<div class="btn switch_mode active"></div>
 			<div class="btn control_page"></div>
 			<div class="btn add_element"></div>
 
 			<div class="wrap">
 			</div>
+		</div>-->
+
+		<div id="editor" class="ormee">
+			
 		</div>
 	</body>
 </html>
